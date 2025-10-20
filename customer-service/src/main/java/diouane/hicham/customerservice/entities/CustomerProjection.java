@@ -1,4 +1,8 @@
 package diouane.hicham.customerservice.entities;
+import org.springframework.data.rest.core.config.Projection;
 
-public class CustomerProjection {
+@Projection(name = "all", types = Customer.class)
+public interface CustomerProjection {
+    String getName();
+    String getEmail();
 }

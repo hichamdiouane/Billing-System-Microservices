@@ -1,4 +1,8 @@
 package diouane.hicham.inventoryservice.repository;
+import diouane.hicham.inventoryservice.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-public class ProductRepository {
+@RepositoryRestResource
+public interface ProductRepository extends JpaRepository<Product,String> {
 }
